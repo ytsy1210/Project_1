@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bawei.tianshuo.mynews.activity.MainActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/frameLayout">
+    </FrameLayout>
+<RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+<RadioButton
+    android:button="@null"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:drawableTop="@drawable/selector_v_home"
+    android:checked="true"
+    android:gravity="center"
+    android:text="首页"
+    android:textColor="@drawable/selector_v_color_text"
+    android:id="@+id/radioButton_home"
+    />
+    <RadioButton
+        android:button="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:drawableTop="@drawable/selector_v_view"
+        android:text="阳光宽频"
+        android:textColor="@drawable/selector_v_color_text"
+        android:id="@+id/radioButton_view"
+        />
+    <RadioButton
+        android:button="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/selector_v_attention"
+        android:text="关注"
+        android:gravity="center"
+        android:textColor="@drawable/selector_v_color_text"
+        android:id="@+id/radioButton_attention"
+        />
+
+</RadioGroup>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/search_background"
+    android:id="@+id/image_home_top_search"
+    android:scaleType="fitXY"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        >
+        <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tabLayout_home_top"
+            app:tabSelectedTextColor="#D43D3D"
+            tabTextColor="#595959"
+            tabIndicatorColor="#D43D3D"
+            android:background="#F6F5F4"
+            tabIndicatorHeight="5dp"
+            tabTextAppearance="@android:style/TextAppearance.Holo.Large"
+            >
+    </android.support.design.widget.TabLayout>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_v_home_button_search"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewPager_home"></android.support.v4.view.ViewPager>
+</LinearLayout>
