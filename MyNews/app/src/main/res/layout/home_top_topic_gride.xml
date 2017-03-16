@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ImageButton
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_marginLeft="420dp"
+    android:background="@drawable/u1"
+    android:id="@+id/button_home_topic_back"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="我的频道"/>
+
+
+    <GridView
+        android:id="@+id/gridView_home_topic_My"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchMode="columnWidth"
+        android:numColumns="4"></GridView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="频道推荐"/>
+
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gridView_home_topic_suggest"
+            android:stretchMode="columnWidth"
+            android:numColumns="4"
+            ></GridView>
+
+
+
+</LinearLayout>
